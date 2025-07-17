@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #1A0E54;
+  line-height: 1.4;
+  font-size: 1.5vw;
+  background-color: #FFFFFF;
+}
+
+header, footer{
+  background-color: #6A5AF2;
+  color: #F8F2ED;
+}
+
+header{
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+}
+
+nav{
+  padding: 1vw; 
+  display:flex;
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+nav a{  
+  padding: 0.75rem; 
+  display: flex; 
+  text-align: right;
+  text-decoration: none; 
+  color: white; 
+  font-size: 2.5vw; 
+  padding-inline-end: 40px;
+}
+
+nav a:hover{
+  color: #F5BFE0;
+}
+
+.list{
+  display:flex; 
+  list-style-type: none; 
+}
+
+.navLogo{
+  display:inline; 
+  padding: 0px .75rem; 
+  font-size: 3vw; 
+  font-weight: 700;
+}
+
+main{
+  height:auto; 
+  margin: auto;
+  position:relative; 
+  top:7vw; 
+  overflow: hidden; 
+  font-size: 1.75vw; 
+  position:relative; 
+  z-index: 1; 
+}
+
+.title{
+  font-size: 3rem;
+  font-style: italic;
+  color: #F5BFE0;
+  display:flex;  
+  padding-top: 20vw;
+  font-size: 25vw; 
+  position:relative;
+  background-size: cover; 
+  background-position: center; 
+  background-image: url("https://cdn.glitch.global/b8a82f92-9a28-4147-930a-30114b646931/ian-sanderson-CeVUNP7aouM-unsplash.png?v=1699811197527");
+}
+
+.title p{
+  position: relative;
+  top: 15vw;
+  padding-left: 4vw; 
+  height: 15%;
+}
+
+.sidepage{
+  font-size: 2vw; 
+  position:relative; 
+  top: 5vw; 
+  display: flex; 
+}
+
+.sidepage a{
+  text-decoration: none; 
+  font-weight: 300;
+  padding: 5vw 2vw; 
+  color:#5A4AF1;
+}
+
+.sidepage a:hover{
+  color: #F5BFE0;
+}
+
+h2{
+  font-size: 5.5vw; 
+  padding: 4vw 2vw 0vw 2vw; 
+  font-family: "hellenic-wide-jf", serif;
+  text-transform: uppercase; 
+}
+
+.resttext{
+  width: 100%; 
+}
+
+.resttext p {
+  padding: 1vw 5vw 0vw 5vw; 
+}
+
+
+.container1{
+  display: grid;  
+  grid-template-areas: "image1 first";
+  grid-template-columns: 50vw 50vw;
+}
+
+.image1{
+  width: 75vw;
+  height: 36.5vw; 
+  position: relative; 
+  margin: 5vw 7.5vw; 
+}
+
+.first{
+  position:relative; 
+  top: 13vw; 
+  padding: 7.5vw;
+}
+
+.container2{
+  display: grid;  
+  grid-template-areas: "second image2";
+  grid-template-columns: 50vw 50vw;
+}
+
+.image2{
+  width: 75%; 
+  position: relative; 
+  top: -2.5vw; 
+}
+
+.second{
+  position:relative; 
+  top: 2.5vw; 
+  padding: 5vw; 
+}
+
+.container3{
+  display: grid;  
+  grid-template-areas: "image3 third";
+  grid-template-columns: 50vw 50vw;
+}
+
+.image3{
+  width: 75vw;
+  height: 50vw; 
+  padding: 0vw 7.5vw 5vw 7.5vw; 
+}
+
+.third{
+  position:relative; 
+  top: 10vw; 
+  padding: 5vw; 
+}
+
+.word3{
+  padding: 5vw; 
+}
+
+.quote{
+  font-size: 3.5vw; 
+  margin: 5vw; 
+  color: #6A5AF2;
+  font-weight: 800;
+}
+
+.one {
+  position: relative; 
+  top: -5vw; 
+}
+
+.two {
+  position: relative; 
+  top: -2.5vw; 
+}
+  
+footer {
+  width: 100%;
+  height: 15vw;
+  margin-top: 10vw;
+  padding-top: 2vw;
+}
+
+footer a{
+  display: inline-block; 
+  height: 50px; 
+  text-decoration: none; 
+  color: #F8F2ED
+}
+
+footer a:hover{
+  color: #F5BFE0; 
+  text-decoration: underline; 
+}
+
+.footsection {
+  margin: 0px auto;
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.reference {
+  height: 10vw;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5vw; 
+}
+
+.copyright {
+  font-size: 1.5vw;
+  text-align: right;
+  color: #BFBFBF;
+}
+
+@media only screen and (max-width: 480px) {  
+  html{
+    font-size: 1vw; 
+    text-align:left; 
+  }
+  
+  main {
+  font-size: 3.5vw;
+  }
+  
+  .container1, .container3{
+    display:flex; 
+    flex-direction: column; 
+    flex: 1 0 50%;
+  }
+  
+  .container2{
+    display:flex; 
+    flex-direction: column-reverse; 
+  }
+  
+ .image1, .image3{
+    display:flex; 
+    justify-content: center; 
+  }
+  
+  .image2{
+    padding-left: 10vw; 
+  }
+ 
+  .first, .third{
+    top: -3vw;  
+  }
+  
+  .quote{
+    color: #8385F2; 
+  }
+  
+}
